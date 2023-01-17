@@ -1,10 +1,10 @@
-# py-map
+# np-map
 
 A simple tool for calculating object detection map .
 
 Usage:
 ```python
-from pymap import ConfusionMatrix
+from npmap import ConfusionMatrix
 matrix = ConfusionMatrix(num_classes=80) # coco 80 classes
 
 # cleanup first

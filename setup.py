@@ -1,5 +1,5 @@
 import setuptools
-from pymap import __version__
+from npmap import __version__
 
 with open('README.md') as f:
     long_description = f.read()
