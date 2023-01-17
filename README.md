@@ -18,7 +18,7 @@ matrix = ConfusionMatrix(num_classes=80)  # coco 80 classes
 # cleanup first
 matrix.clean()
 
-for (pred, gt) in (preds, gts):  # for loop for every images
+for (pred, gt) in zip(preds, gts):  # for loop for every images
     # pred format x0, y0, x1, y1, scores, labels
     # gt format x0, y0, x1, y1, labels
     # if there is no gt or pred, please set pred=None or gt=None
@@ -38,6 +38,9 @@ print(res['mean_recall'])
 
 # print mp
 print(res['mean_precision'])
+
+# print per class results
+print(res['detail'])
 
 ...  # so on
 ```
