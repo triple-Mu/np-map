@@ -4,7 +4,9 @@ A simple tool for calculating object detection map .
 
 # Install
 
+```shell
 pip install npmap -i https://pypi.org/simple
+```
 
 # Usage
 
